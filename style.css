@@ -1,0 +1,25 @@
+body {
+    font-family: 'Arial', sans-serif; /* Changes the font across all pages */
+    background-color: #f4f4f4; /* Light grey background instead of white */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    height: 100vh; /* Full viewport height */
+}
+
+h1 {
+    color: #333; /* Dark grey color for headers */
+}
+
+p {
+    color: #666; /* Lighter grey color for paragraph text */
+    width: 80%; /* Limits the width of paragraphs */
+    text-align: center; /* Center-aligns text */
+}
+
+iframe {
+    border-radius: 8px; /* Rounds the corners of the iframe */
+    margin-top: 20px; /* Adds space above the iframe */
+}
