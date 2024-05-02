@@ -4,22 +4,27 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center; /* Centers content horizontally */
-    align-items: center; /* Centers content vertically */
+    flex-direction: column; /* Stacks children vertically */
+    justify-content: center; /* Centers content vertically in the container */
+    align-items: center; /* Centers content horizontally */
     height: 100vh; /* Full viewport height */
+    text-align: center; /* Ensures text in child elements is centered */
 }
 
 h1 {
     color: #333; /* Dark grey color for headers */
+    margin-top: 20px; /* Adds space above the header, adjust as needed */
 }
 
 p {
     color: #666; /* Lighter grey color for paragraph text */
     width: 80%; /* Limits the width of paragraphs */
-    text-align: center; /* Center-aligns text */
+    margin-top: 20px; /* Adds space above the paragraph */
 }
 
 iframe {
+    width: 560px;
+    height: 315px;
     border-radius: 8px; /* Rounds the corners of the iframe */
     margin-top: 20px; /* Adds space above the iframe */
 }
