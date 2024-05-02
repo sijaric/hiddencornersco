@@ -1,30 +1,33 @@
 body {
-    font-family: 'Arial', sans-serif; /* Changes the font across all pages */
+    font-family: 'Arial', sans-serif; /* Maintains the font across all pages */
     background-color: #f4f4f4; /* Light grey background instead of white */
-    margin: 0;
-    padding: 0;
+    margin: 0; /* Ensures no margin around the edges */
+    padding: 0; /* Ensures no padding within the body */
     display: flex;
-    flex-direction: column; /* Stacks children vertically */
-    justify-content: center; /* Centers content vertically in the container */
+    flex-direction: column; /* Keeps items in a vertical stack */
     align-items: center; /* Centers content horizontally */
-    height: 100vh; /* Full viewport height */
-    text-align: center; /* Ensures text in child elements is centered */
+    width: 100%; /* Ensures body takes full width of the viewport */
+    min-height: 100vh; /* Ensures at least full height of the viewport */
+    text-align: center; /* Centers text within each block */
+}
+
+h1, p, iframe {
+    width: 90%; /* Increases the width of all content elements */
+    max-width: 560px; /* Ensures elements do not stretch beyond 560px */
 }
 
 h1 {
-    color: #333; /* Dark grey color for headers */
-    margin-top: 20px; /* Adds space above the header, adjust as needed */
+    color: #333;
+    margin-top: 10px; /* Reduces space at the top, adjust as needed */
 }
 
 p {
-    color: #666; /* Lighter grey color for paragraph text */
-    width: 80%; /* Limits the width of paragraphs */
-    margin-top: 20px; /* Adds space above the paragraph */
+    color: #FFA500;
+    margin-top: 20px; /* Maintains space between h1 and p */
 }
 
 iframe {
-    width: 560px;
     height: 315px;
-    border-radius: 8px; /* Rounds the corners of the iframe */
-    margin-top: 20px; /* Adds space above the iframe */
+    border-radius: 8px;
+    margin-top: 20px; /* Space between p and iframe */
 }
