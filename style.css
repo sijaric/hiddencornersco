@@ -12,22 +12,25 @@ body {
 }
 
 h1, p, iframe {
-    width: 90%; /* Increases the width of all content elements */
-    max-width: 560px; /* Ensures elements do not stretch beyond 560px */
+    width: 100%; /* Sets width to take up 100% of the parent container */
+    max-width: none; /* Removes the max-width restriction */
 }
 
 h1 {
     color: #333;
     margin-top: 10px; /* Reduces space at the top, adjust as needed */
+    font-size: 2em; /* Increases the size of the header font */
 }
 
 p {
-    color: #FFA500;
+    color: #FFA500; /* Neon orange color */
     margin-top: 20px; /* Maintains space between h1 and p */
+    font-size: 1.5em; /* Increases the size of the paragraph font */
 }
 
 iframe {
-    height: 315px;
+    width: 100%; /* Makes iframe take up 100% of its parent container's width */
+    height: 60vh; /* Sets the height of the iframe to 60% of the viewport height */
     border-radius: 8px;
     margin-top: 20px; /* Space between p and iframe */
 }
